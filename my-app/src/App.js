@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Form from './containers/form';
+import FormDisplay from './containers/form-display';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React lol test</h2>
+        <div className="App">
+            <div className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                <h2>The game.</h2>
+            </div>
+            <Form/>
+            <br />
+            <hr />
+            <FormDisplay />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
     );
   }
 }
